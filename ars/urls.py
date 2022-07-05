@@ -12,3 +12,8 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
 ]
+
+"""
+django.contrib.auth.urls, inclui (login, logout, password_change, password_done, password_reset,
+password_reset_done, password_reset_confirm and password_reset_complete)
+"""

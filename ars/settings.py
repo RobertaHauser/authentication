@@ -107,9 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -122,3 +122,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# EMAIL CONFIG
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_FROM_USER = 'igestao@igestao.net.br'
+EMAIL_HOST = 'smtp.igestao.net.br'
+EMAIL_HOST_USER = 'igestao@igestao.net.br'
+EMAIL_HOST_PASSWORD = 'Robert@81'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+
+"""
+Configurar também em: venv/Lib/site-packages/dajngo/contrib/auth/views.py
+ 
+PasswordResetView
+ from_email = 'igestao@igestao.net.br'
+
+Conforme explicado em: www.youtube.com/watch?v=_km7UQmABvc
+"""
