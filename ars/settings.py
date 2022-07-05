@@ -139,7 +139,7 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 
 """
-Configurar também em: venv/Lib/site-packages/dajngo/contrib/auth/views.py
+Configurar também em: venv/Lib/site-packages/django/contrib/auth/views.py
  
 PasswordResetView
  from_email = 'igestao@igestao.net.br'
