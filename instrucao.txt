@@ -1,0 +1,22 @@
+USUÁRIOS
+
+usuario: Coordenador
+nome: Coordenador
+sobrenome: Servmetal
+email: coordenador@servmetal.com.br
+senha: senh@1234
+
+
+***FUNCIONALIDADES:
+registro SEM email: OK
+login COM username: OK
+logout: OK
+change password:OK
+forgout password email console:OK
+forgout password email igestao: NÃO
+ 
+
+  File "C:\Program Files\Python38\lib\smtplib.py", line 885, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'coordenador@servmetal.com.br': (504, b'5.5.2 <webmaster@localhost>: Sender address rejected: need fully-qualified address')}
+[19/Jul/2022 15:40:57] "POST /accounts/password_reset/ HTTP/1.1" 500 129942
