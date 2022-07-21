@@ -126,9 +126,9 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-
+"""
 # EMAIL CONFIG
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_FROM_USER = 'igestao@igestao.net.br'
@@ -137,7 +137,7 @@ EMAIL_HOST_USER = 'igestao@igestao.net.br'
 EMAIL_HOST_PASSWORD = 'Robert@81'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-
+"""
 """
 Configurar também em: venv/Lib/site-packages/django/contrib/auth/views.py
  
